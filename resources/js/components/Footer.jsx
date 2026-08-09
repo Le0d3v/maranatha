@@ -41,7 +41,7 @@ export default function Footer() {
                     {/* Navegación */}
 
                     <div>
-                        <h3 className="uppercase tracking-[0.4em] text-gold-400 text-lg">
+                        <h3 className="uppercase tracking-[0.4em] text-gold-400 text-lg text-center md:text-start">
                             Navegación
                         </h3>
 
@@ -50,7 +50,7 @@ export default function Footer() {
                                 <a
                                     key={link.href}
                                     href={link.href}
-                                    className="text-lg text-cream-100/75 transition hover:text-yellow-600 hover:-translate-y-1 "
+                                    className="text-lg text-cream-100/75 transition hover:text-yellow-600 hover:-translate-y-1  text-center md:text-start py-5 md:py-0"
                                 >
                                     {link.label}
                                 </a>
@@ -61,7 +61,7 @@ export default function Footer() {
                     {/* Contacto */}
 
                     <div>
-                        <h3 className="uppercase tracking-[0.4em] text-gold-400 text-lg">
+                        <h3 className="uppercase tracking-[0.4em] text-gold-400 text-lg text-center md:text-start">
                             Contacto
                         </h3>
 
@@ -105,13 +105,13 @@ export default function Footer() {
 
                 <div className="mt-20 border-t border-white/10 pt-10">
                     <div className="flex flex-col gap-4 md:flex-row md:justify-between">
-                        <p className="text-sm text-cream-100/45">
+                        <p className="text-sm text-cream-100/45 text-center md:text-start">
                             © {new Date().getFullYear()} Iglesia Cristiana
                             Gracia y Verdad. Todos los derechos reservados.
                         </p>
 
-                        <p className="text-sm text-cream-100/35">
-                            Hecho con gratitud para la gloria de Dios.
+                        <p className="text-xs mt-3 md:mt-0 md:text-sm text-cream-100/35 text-center md:text-start">
+                            Hecho con amor y gratitud para la gloria de Dios.
                         </p>
                     </div>
                 </div>
