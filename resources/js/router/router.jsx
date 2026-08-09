@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import PublicLayout from "../layouts/PublicLayout";
-import Biblia from "../components/Biblia";
+import Biblia from "../pages/Biblia";
 
 const router = createBrowserRouter([
     {
