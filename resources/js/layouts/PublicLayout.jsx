@@ -7,19 +7,19 @@ import Inicio from "../pages/Inicio";
 import Predicas from "../pages/Predicas";
 
 export default function PublicLayout() {
-    const { page, setPage } = useMaranatha();
+  const { page, setPage } = useMaranatha();
 
-    const pages = [
-        <Inicio key="inicio" />,
-        <Predicas key="predicas" />,
-        <Biblia key="biblia" />,
-    ];
+  const pages = [
+    <Inicio key="inicio" />,
+    <Predicas key="predicas" />,
+    <Biblia key="biblia" />,
+  ];
 
-    return (
-        <div className="min-h-screen bg-gray-100">
-            <Header />
-            <div>{pages[page]}</div>
-            <Footer />
-        </div>
-    );
+  return (
+    <div className="min-h-screen bg-mauve-92 ">
+      <Header />
+      <div>{pages[page]}</div>
+      <Footer />
+    </div>
+  );
 }

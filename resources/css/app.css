@@ -1,8 +1,51 @@
 @import "tailwindcss";
 
 .bg-coffee {
-    background-color: #1c1a13;
+  background-color: #1c1a13;
 }
 .text-gold-400 {
-    color: #b7914c;
+  color: #b7914c;
+}
+
+@keyframes rayRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rayRotateReverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.ray-rotate {
+  animation: rayRotate 90s linear infinite;
+}
+
+.ray-rotate-reverse {
+  animation: rayRotateReverse 70s linear infinite;
+}
+
+@keyframes floatParticle {
+  0%,
+  100% {
+    transform: translateY(0px);
+    opacity: 0.2;
+  }
+
+  50% {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+}
+
+.anim-float {
+  animation: floatParticle 5s ease-in-out infinite;
 }
