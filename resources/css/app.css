@@ -49,3 +49,11 @@
 .anim-float {
   animation: floatParticle 5s ease-in-out infinite;
 }
+
+.header-fondo {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/public/img/background.png");
+  background-size: cover;
+  background-position: center;
+}

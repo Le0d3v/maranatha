@@ -52,8 +52,7 @@ export default function LoginForm() {
 
       <button
         type="submit"
-        className="
-            w-full
+        className="w-full
             rounded-xl
             bg-gradient-to-r
             from-yellow-700
